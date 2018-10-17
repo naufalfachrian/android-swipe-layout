@@ -1,6 +1,5 @@
 package com.daimajia.swipe.adapters;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.daimajia.swipe.SwipeLayout;
@@ -10,6 +9,8 @@ import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
 import com.daimajia.swipe.util.Attributes;
 
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class RecyclerSwipeAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> implements SwipeItemMangerInterface, SwipeAdapterInterface {
 

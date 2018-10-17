@@ -2,7 +2,6 @@ package com.daimajia.swipe.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -13,6 +12,8 @@ import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
 import com.daimajia.swipe.util.Attributes;
 
 import java.util.List;
+
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 public abstract class SimpleCursorSwipeAdapter extends SimpleCursorAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
 
