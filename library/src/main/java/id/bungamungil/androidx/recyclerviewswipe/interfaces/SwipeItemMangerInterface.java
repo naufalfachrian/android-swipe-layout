@@ -1,7 +1,7 @@
-package com.daimajia.swipe.interfaces;
+package id.bungamungil.androidx.recyclerviewswipe.interfaces;
 
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.util.Attributes;
+import id.bungamungil.androidx.recyclerviewswipe.SwipeLayout;
+import id.bungamungil.androidx.recyclerviewswipe.util.Attributes;
 
 import java.util.List;
 

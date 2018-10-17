@@ -1,4 +1,4 @@
-package com.daimajia.swipe.interfaces;
+package id.bungamungil.androidx.recyclerviewswipe.interfaces;
 
 public interface SwipeAdapterInterface {
 

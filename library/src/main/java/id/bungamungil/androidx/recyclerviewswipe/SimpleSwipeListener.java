@@ -1,4 +1,4 @@
-package com.daimajia.swipe;
+package id.bungamungil.androidx.recyclerviewswipe;
 
 public class SimpleSwipeListener implements SwipeLayout.SwipeListener {
 

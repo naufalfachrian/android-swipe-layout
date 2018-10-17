@@ -1,12 +1,12 @@
-package com.daimajia.swipe.implments;
+package id.bungamungil.androidx.recyclerviewswipe.implments;
 
 import android.view.View;
 
-import com.daimajia.swipe.SimpleSwipeListener;
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.interfaces.SwipeAdapterInterface;
-import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
-import com.daimajia.swipe.util.Attributes;
+import id.bungamungil.androidx.recyclerviewswipe.SimpleSwipeListener;
+import id.bungamungil.androidx.recyclerviewswipe.SwipeLayout;
+import id.bungamungil.androidx.recyclerviewswipe.interfaces.SwipeAdapterInterface;
+import id.bungamungil.androidx.recyclerviewswipe.interfaces.SwipeItemMangerInterface;
+import id.bungamungil.androidx.recyclerviewswipe.util.Attributes;
 
 import java.util.ArrayList;
 import java.util.Collections;

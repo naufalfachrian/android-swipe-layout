@@ -1,30 +1,30 @@
-package com.daimajia.swipe.adapters;
+package id.bungamungil.androidx.recyclerviewswipe.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.daimajia.swipe.SwipeLayout;
-import com.daimajia.swipe.implments.SwipeItemMangerImpl;
-import com.daimajia.swipe.interfaces.SwipeAdapterInterface;
-import com.daimajia.swipe.interfaces.SwipeItemMangerInterface;
-import com.daimajia.swipe.util.Attributes;
+import id.bungamungil.androidx.recyclerviewswipe.SwipeLayout;
+import id.bungamungil.androidx.recyclerviewswipe.implments.SwipeItemMangerImpl;
+import id.bungamungil.androidx.recyclerviewswipe.interfaces.SwipeAdapterInterface;
+import id.bungamungil.androidx.recyclerviewswipe.interfaces.SwipeItemMangerInterface;
+import id.bungamungil.androidx.recyclerviewswipe.util.Attributes;
 
 import java.util.List;
 
-import androidx.cursoradapter.widget.SimpleCursorAdapter;
+import androidx.cursoradapter.widget.CursorAdapter;
 
-public abstract class SimpleCursorSwipeAdapter extends SimpleCursorAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
+public abstract class CursorSwipeAdapter extends CursorAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
 
     private SwipeItemMangerImpl mItemManger = new SwipeItemMangerImpl(this);
 
-    protected SimpleCursorSwipeAdapter(Context context, int layout, Cursor c, String[] from, int[] to, int flags) {
-        super(context, layout, c, from, to, flags);
+    protected CursorSwipeAdapter(Context context, Cursor c, boolean autoRequery) {
+        super(context, c, autoRequery);
     }
 
-    protected SimpleCursorSwipeAdapter(Context context, int layout, Cursor c, String[] from, int[] to) {
-        super(context, layout, c, from, to);
+    protected CursorSwipeAdapter(Context context, Cursor c, int flags) {
+        super(context, c, flags);
     }
 
     @Override
@@ -47,6 +47,11 @@ public abstract class SimpleCursorSwipeAdapter extends SimpleCursorAdapter imple
     @Override
     public void closeAllExcept(SwipeLayout layout) {
         mItemManger.closeAllExcept(layout);
+    }
+
+    @Override
+    public void closeAllItems() {
+        mItemManger.closeAllItems();
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.daimajia.swipe.util;
+package id.bungamungil.androidx.recyclerviewswipe.util;
 
 
 public class Attributes {
